@@ -4,6 +4,7 @@ import TextFeilds from './components/TextFields.jsx';
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
 import Login from './components/Login.jsx';
+import NavBar from './components/NavBar.jsx';
 
 import {
     BrowserRouter as Router,
@@ -20,12 +21,10 @@ export default class App extends React.Component{
         return (
             <Router>
                 <div className="App">
+                    
                     <div className="container">
-                            <ul>
-                                <li><Link to="/home">Home</Link></li>
-                                <li><Link to="/about">About</Link></li>
-                                <li><Link to="/login">Login</Link></li>
-                            </ul>
+                    <NavBar />
+                           
                             <hr/>
                     {/* Routes will go here */}
 
